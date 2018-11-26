@@ -17,9 +17,18 @@ var arrayNumber = [];
 for (var i = 0; i < 5; i++)
 {
   var randomArray = ' '
-  randomArray += getRandomNumber(0,100)
+  randomArray += getRandomNumber(1,100)
   arrayNumber.push(randomArray)
 }
 console.log(arrayNumber);
 
-alert(arrayNumber)
+var alertNumbers = ''
+for (var i = 0; i < arrayNumber.length; i++ )
+{
+
+  alertNumbers = alertNumbers + arrayNumber[i];
+  console.log(alertNumbers);
+
+}
+
+alert(alertNumbers);
