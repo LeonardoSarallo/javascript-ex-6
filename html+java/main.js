@@ -6,13 +6,14 @@ var nome = prompt('quale è il tuo nome?')
 document.getElementById('utente').innerHTML = 'ciao ' + nome;
 
 
+
 var sceltasesso = prompt('Digita maschio o femmina');
 if (sceltasesso == 'maschio') {
-  utente.style.background = "blue";
+  utente.style.color = "blue";
 
 }
 
 else if (sceltasesso == 'femmina') {
-  utente.style.background = "pink";
+  utente.style.color = "pink";
 
 }
