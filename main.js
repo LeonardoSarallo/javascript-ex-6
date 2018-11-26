@@ -6,13 +6,20 @@
 // dice quanti e quali dei numeri da indovinare sono
 // stati individuati
 
-function getRandomNumber(min, max) {
-  for (var i = 0; i < 5; i++)
-  {
-    var random = Math.floor(Math.random()*(max-min+1)+min);
-    console.log(random);
-
-  }
-  return random;
+function getRandomNumber(min, max)
+{
+  var randomNumber = Math.floor(Math.random()*(max-min+1)+min);
+  return randomNumber;
 }
-arrayNumber.push(getRandomNumber(0,9));
+
+var arrayNumber = [];
+
+for (var i = 0; i < 5; i++)
+{
+  var randomArray = ' '
+  randomArray += getRandomNumber(0,100)
+  arrayNumber.push(randomArray)
+}
+console.log(arrayNumber);
+
+alert(arrayNumber)
