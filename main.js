@@ -5,7 +5,7 @@
 // Dopo che sono stati inseriti i 5 numeri, il software
 // dice quanti e quali dei numeri da indovinare sono
 // stati individuati
-var arrayNumber = [];
+
 function getRandomNumber(min, max) {
   for (var i = 0; i < 5; i++)
   {
