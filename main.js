@@ -35,12 +35,21 @@ alert('Ecco i numeri' + alertNumbers);
 
 var arrayId = [];
 
-for (var i = 0; i < 5; i++)
-{
-  setTimeout(myFunction, 5000);
-  function myFunction() {
-  parseInt(prompt('inserisci il tuo numero'));
+setTimeout(function () {
+  for (var i = 0; i < 5; i++)
+  {
+    var numeriUtente = parseInt(prompt('inserisci il tuo numero'));
+    arrayId.push(numeriUtente);
+    console.log(numeriUtente);
   }
-  arrayId.push(prompt());
+}, 5000);
+
+for (var i = 0; i < arrayNumber.length; i++) {
+  for (var k = 0; k < arrayId.length; k++) {
+    if (arrayNumber[i] == arrayId[k]) {
+      document.writeln(arrayNumber[k])
+    }
+  }
 }
+
 console.log(arrayId);
