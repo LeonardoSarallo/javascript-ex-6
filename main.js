@@ -31,4 +31,16 @@ for (var i = 0; i < arrayNumber.length; i++ )
 
 }
 
-alert(alertNumbers);
+alert('Ecco i numeri' + alertNumbers);
+
+var arrayId = [];
+
+for (var i = 0; i < 5; i++)
+{
+  setTimeout(myFunction, 5000);
+  function myFunction() {
+  parseInt(prompt('inserisci il tuo numero'));
+  }
+  arrayId.push(prompt());
+}
+console.log(arrayId);
